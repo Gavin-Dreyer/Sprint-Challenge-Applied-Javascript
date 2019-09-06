@@ -54,14 +54,42 @@ function cardCarousel(){
   carouselContainer.append(rightButton);
 
   const imgArray = [img1, img2, img3, img4]
+  let imgIndex = 0
 
-  for(let i = 0; i < imgArray.length; i++) {
-    leftButton.addEventListener('click', e => {
-      let c = 0
-      imgArray[c].style.display = 'none';
-      imgArray[c + 1].style.display = 'block';
-      c = c + 1
-    })};
+  
+    // leftButton.addEventListener('click', e => {
+    //   if(imgIndex > 0){
+    //     imgIndex--
+    //   } else {
+    //     imgIndex = imgArray.length - 1
+    //   }
+    //   renderImg();
+    // })
+
+    // rightButton.addEventListener('click', e => {
+    //   if(imgIndex < imgArray.length-1){
+    //     imgIndex++
+    //   } else {
+    //     imgIndex = 0
+    //   }
+    //   renderImg();
+    // })
+
+    // function renderImg(){
+    //   imgArray.forEach((item, idx) => {
+    //     console.log(item, idx)
+    //     debugger
+    //     if (idx === imgIndex) {
+    //       // render this one
+
+    //       item.style.display = 'block'
+    //     } else {
+    //       // display hide
+    //       item.style.display = 'none'
+    //     }
+    //   })
+    // }
+
 
     for(let i = 0; i < imgArray.length; i++) {
       rightButton.addEventListener('click', e => {
