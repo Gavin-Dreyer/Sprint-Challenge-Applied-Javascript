@@ -28,7 +28,7 @@ function Header() {
     temperature.classList.add('temp');
 
     //content
-    date.textContent = 'SMARCH 28, 2019';
+    date.textContent = 'September 6th, 2019';
     title.textContent = 'Lambda Times';
     temperature.textContent = '98°';
 
